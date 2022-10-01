@@ -27,7 +27,7 @@ return result;
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-Console.WriteLine("Введите число : ");
+/*Console.WriteLine("Введите число : ");
 int a = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"Сумма цифр числа {a} равна {GetSum()}");
 
@@ -41,9 +41,32 @@ while (b > 0)
   b = b / 10 ;
   }
 return sum;
-}
+}*/
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 рандомных элементов и выводит их на экран.
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
+Console.WriteLine("Введите длинну массива: ");
+int a = int.Parse(Console.ReadLine()!);
+int [] arr = FillArray();
+PrintArray(arr);
+
+int[] FillArray()
+{
+    int[] array = new int [a];
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(0, 1000);
+    }
+    return array;
+}
+
+void PrintArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+    Console.Write($"{arr[i]} ");
+    }
+}
+
 
