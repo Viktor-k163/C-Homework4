@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Homeworkseminar004/1.0.0": {
+        "runtime": {
+          "Homeworkseminar004.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Homeworkseminar004/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
